@@ -1,0 +1,134 @@
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.navContainer{
+    width: 100vw;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+}
+#navList{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navBrandName{
+    font-size: 2.5rem;
+    color: azure;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navBottom{
+    display: flex;
+    gap: 30px;
+}
+.contentBox{
+    width: 50%;
+    margin: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 15px;
+    box-shadow: 0px 0px 30px black;
+    border-radius: 5px;
+}
+.footerBox{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+}
+.footerBox p{
+    color: azure;
+    font-size: 2rem;
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s linear 0s ;
+    box-shadow: 1px 1px 10px whitesmoke;
+    border-radius: 25px;
+}
+.rightBox img{
+   height: 300px;
+   width: 350px;
+   border-radius: 25px;
+   display: block;
+   transition: all 0.6s linear 0s ;
+}
+.rightBox:hover{
+    transform:scale(1.1);
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.leftBox h2{
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px black;
+}
+.ingrediantBox{
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 1px black;
+}
+.directionBox{
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 1px black;
+}
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(78, 77, 77, 0.677);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s ;
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+    background-color: rgb(174, 14, 14);
+   }
+    
+}
